@@ -2,6 +2,10 @@ module.exports = {
     mode: "development",
     devtool: "inline-source-map",
     entry: "./src/index.ts",
+    devServer: {
+      contentBase: __dirname + "/public",
+      port: 9009
+    },
     output: {
       path: __dirname + "/public/js",
       filename: "main.js"
